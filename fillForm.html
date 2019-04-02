@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { background-color: aqua; font-family:sans-serif,'Times New Roman';}
+        h1{ font-family: sans-serif,'Times New Roman'; font-size:30;}
+    </style>
+<script>
+function fillForm()
+    {
+        var fname,lname,email;
+        var fname=prompt('Please Enter Your First Name');
+        document.getElementById("ftname").innerHTML = fname;
+        
+        var lname= prompt('Please Enter Your Last Name');
+        document.getElementById("ltname").innerHTML = lname;
+        
+        var email= prompt('Plese Leave Your Email');
+        document.getElementById("mail").innerHTML = email;
+    }
+</script>
+</head>
+<body onload="fillForm()" >
+    <h1>Contact Form</h1>
+ <form enctype="text/plain" method="get" action="mailto:libertdiontay@gmail.com">
+First Name:<input type="text" name="first_name" id="ftname"><br/>
+Last Name:<input type="text" name="Last_name" id="ltname"><br/>
+    email: <input type= "text" name="email" id="mail"><br/>
+    Comments<text area rows="6" cols="40" name="comments">Tell me about yourself.</text>
+     <input type="submit">
+    
+    </form> 
+    </body>   
+    
